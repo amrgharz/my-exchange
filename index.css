@@ -1,0 +1,65 @@
+.container{
+display:grid;
+grid-gap: 10px;
+grid-template-columns: repeat( 12 ,1fr);
+grid-auto-rows:minmax(80px ,auto);
+}
+.menu{
+grid-column: 1/13;
+}
+.promotion{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(25px ,auto);
+    padding:10px;
+    margin:0px;
+    grid-gap:5px;
+    grid-column: 1/13;
+    grid-row: 2/5;
+}
+.give_away{
+    grid-column:1/2;
+    grid-row:1/3;
+    border: solid 2px red;
+}
+.referral{
+    grid-column:2/3;
+    grid-row:1/3;
+    border: solid 2px red
+
+}
+.volume{
+    grid-column:3/4;
+    grid-row:1/3;
+    border: solid 2px red
+}
+.news{
+    grid-column: 1/13;
+    grid-row:5/6;
+}
+.side{
+    grid-column:1/3;
+    grid-row:6/12;
+}
+.chart{
+    grid-column:3/9;
+    grid-row:6/12;
+}
+.buy_orders{
+    grid-column:9/13;
+    grid-row:6/9;
+}
+.sell_orders{
+    grid-column: 9/13;
+    grid-row :9/12;
+}
+.footer{
+    grid-column:1/13;
+}
+.container div {
+    background-color: blue;
+    padding:25px;
+}
+.container div:nth-child(even){
+    background-color: darkgrey;
+}
